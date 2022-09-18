@@ -1,6 +1,5 @@
 # CountriesApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+REST client that allows us to obtain and view the property information of the countries present in the API [Restcountries](https://restcountries.com) such as name, capital, region, sub-region, population, area, time zone, native name and the link to view the flag.
 
 ## Development server
 
