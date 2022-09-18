@@ -1,0 +1,30 @@
+<div class=" border border-class">    
+    <h2 class="h2-class">Lista de Paises</h2>  
+  </div> 
+<div>
+    <table id="customers">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">capital</th>
+                <th scope="col">região</th>
+                <th scope="col">sub-região</th>
+                <th scope="col">população</th>
+                <th scope="col">fuso horário</th>
+                <th scope="col">bandeira</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let country of countries">
+                <td>{{ country.name.common }}</td>
+                <td>{{ country.capital }}</td>
+                <td>{{ country.region }}</td>
+                <td>{{ country.subregion }}</td>
+                <td>{{ country.population }}</td>
+                <td id="timezone">{{ country.timezones}}</td>
+                <td><a href="{{country.flags.png }}">PNG</a><br> <a href="{{country.flags.svg }}">SVG</a> </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
